@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<center>
+<h1><b>Type and Area of a Triangle</b></h1>
+<h4>
+<script type="text/javascript">
+var a=parseInt(prompt("Enter side1: "));
+var b=parseInt(prompt("Enter side2: "));
+var c=parseInt(prompt("Enter side3: "));
+if(a+b>c && b+c>a && a+c>b)
+{
+if(a==b && b==c)
+document.write("<br>Type: Equilateral triangle");
+else if(a==b||b==c||a==c)
+document.write("<br>Type: Isosceles triangle");
+else
+document.write("<br>Type: Scalene triangle");
+var s=(a+b+c)/2;
+var area=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+document.write("<br>Area of triangle: ",area);
+}else
+document.write("<br> These sides do not form a triangle");
+</script>
+</h4>
+</center>
+</body>
+</html>
